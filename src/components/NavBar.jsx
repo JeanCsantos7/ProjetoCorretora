@@ -11,7 +11,7 @@ export default function NavBar({ valorInput }) {
 
 
 
-  function saudar()
+  function atualizar()
   {
    Location.reload()
 
@@ -41,7 +41,7 @@ export default function NavBar({ valorInput }) {
       <div className={style.container}>
         <span className={style.logotipo}>
 
-          <Link onClick={saudar}to={'/'}>
+          <Link onClick={atualizar}to={'/'}>
             <MdApartment className={style.iconLogo} />
             <h1>Goes</h1>
           </Link>
@@ -54,7 +54,7 @@ export default function NavBar({ valorInput }) {
             className={style.inputValue}
             type="text"
 
-            placeholder="Digite o nome do empreendimento ou a região"
+            placeholder="Digite o nome do imóvel"
             onChange={inputValue}
 
 

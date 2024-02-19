@@ -28,20 +28,19 @@ import { FaCarSide } from "react-icons/fa";
 
 
 
-
 export default function ImoveisDestaque({ termoPesquisa }) {
 
 
 
     const arrayDeDados = [
-        { id: 1, imagem: Apartamento1, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Casa', preco: 'R$ 220000,00', tamanhoImovel: '36m²', dormitorios: '2', vaga: '1' },
-        { id: 2, imagem: Apartamento2, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$ 190000,00', tamanhoImovel: '39m²', dormitorios: '2', vaga: '1' },
-        { id: 3, imagem: Apartamento3, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$  100000,00', tamanhoImovel: '32m²', dormitorios: '1', vaga: '1' },
-        { id: 4, imagem: Apartamento4, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$  285000,00', tamanhoImovel: '50m²', dormitorios: '3', vaga: '1' },
-        { id: 5, imagem: Apartamento5, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$ 286000,00', tamanhoImovel: '42m²', dormitorios: '', vaga: '1' },
-        { id: 6, imagem: Apartamento6, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$ 240000,00', tamanhoImovel: '45m²', dormitorios: '3', vaga: '1' },
-        { id: 7, imagem: Apartamento7, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$ 230000,00', tamanhoImovel: '32m²', dormitorios: '2', vaga: '1' },
-        { id: 8, imagem: Apartamento8, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento', preco: 'R$ R$ 480000,00', tamanhoImovel: '62m²', dormitorios: '4', vaga: '1' },
+        { id: 1, imagem: Apartamento1, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Casa ZN', preco: 'R$ 220000,00', tamanhoImovel: '36m²', dormitorios: '2', vaga: '1' },
+        { id: 2, imagem: Apartamento2, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento ZS', preco: 'R$ 190000,00', tamanhoImovel: '39m²', dormitorios: '2', vaga: '1' },
+        { id: 3, imagem: Apartamento3, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento ZS', preco: 'R$  100000,00', tamanhoImovel: '32m²', dormitorios: '1', vaga: '1' },
+        { id: 4, imagem: Apartamento4, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento ZN', preco: 'R$  285000,00', tamanhoImovel: '50m²', dormitorios: '3', vaga: '1' },
+        { id: 5, imagem: Apartamento5, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento ZL', preco: 'R$ 286000,00', tamanhoImovel: '42m²', dormitorios: '', vaga: '1' },
+        { id: 6, imagem: Apartamento6, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento Centro', preco: 'R$ 240000,00', tamanhoImovel: '45m²', dormitorios: '3', vaga: '1' },
+        { id: 7, imagem: Apartamento7, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento ZN', preco: 'R$ 230000,00', tamanhoImovel: '32m²', dormitorios: '2', vaga: '1' },
+        { id: 8, imagem: Apartamento8, descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...', tipoImovel: 'Apartamento ZN', preco: 'R$ R$ 480000,00', tamanhoImovel: '62m²', dormitorios: '4', vaga: '1' },
 
 
     ]
@@ -49,7 +48,11 @@ export default function ImoveisDestaque({ termoPesquisa }) {
     const ApartamentosFiltrados = arrayDeDados.filter((dado) => (
 
 
-        dado.tipoImovel.toLowerCase().includes(termoPesquisa.toLowerCase())
+        dado.tipoImovel.toLowerCase().includes(termoPesquisa.toLowerCase()) || dado.preco.toLowerCase().includes(termoPesquisa.toLowerCase())
+        
+ 
+        
+        
 
 
 
