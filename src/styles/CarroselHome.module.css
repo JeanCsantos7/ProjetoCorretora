@@ -1,7 +1,5 @@
 
 
-
-
 .containerCarrosel{
 
     display: flex;
@@ -31,4 +29,16 @@
         height: 250px;
        
     }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px)
+{
+
+    .imagemCarrosel{
+        width: 78%;
+        height: 285px;
+    }
+
+
 }
