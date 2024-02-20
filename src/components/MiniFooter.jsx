@@ -18,7 +18,7 @@ export default function MiniFooter() {
 
 
 
-                  <span className={style.reminder}>
+                  <span className={style.containerFooter}>
 
                  
 
